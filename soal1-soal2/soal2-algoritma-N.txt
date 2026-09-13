@@ -1,0 +1,47 @@
+Algoritma Square(N)
+INPUT: N (Bilangan Bulat)
+OUTPUT: Representasi Kotak (Square)
+
+KAMUS:
+    N: Integer
+    i, j: integer
+
+ALGORITMA:
+    input(N)
+
+    If (N <= 2) {
+        output ("Angka Terlalu Kecil")}
+    Else If (N >= 10) {    
+        output ("Angka Terlalu Besar")}
+    Else{
+        for (i = 1;i <= N;i++) {
+            If (i == 1 || i == N) {
+                for (j = 1; j <= N;j++){
+                    output('=')
+                }
+            } Else {
+                output ('|')
+                for (j=1; j <= N - 2; j++) {
+                    output(' ')
+                }
+                ouput('|')
+            }
+            ouput('\n')
+        }
+
+        for (j = 1; i <= N; j++) {
+            ouput('=')
+        }
+        for (i = 1; i <= N; i++){
+            ouput('|')
+            for (j = 1; j <= N-2; j++){
+                output(' ')
+            }
+            ouput('|')
+        }
+        for (j = 1; i <= N; j++) {
+            ouput('=')
+        }
+    }
+
+
